@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  background: #F7F4EE;
+  color: #0E0E0E;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-6 md:px-10;
+  }
+  .eyebrow {
+    @apply text-xs uppercase tracking-widest2 text-champagne font-medium;
+  }
+  .h-display {
+    @apply font-display font-normal leading-[1.1];
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-ink text-cream px-7 py-3.5 text-sm tracking-wider uppercase transition hover:bg-champagne hover:text-ink;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 border border-ink/20 text-ink px-7 py-3.5 text-sm tracking-wider uppercase transition hover:border-ink hover:bg-ink hover:text-cream;
+  }
+  .hairline {
+    @apply h-px w-full bg-ink/10;
+  }
+}
