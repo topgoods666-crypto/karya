@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { locales, type Locale } from "@/i18n/config";
 
-export const runtime = "edge";
-
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

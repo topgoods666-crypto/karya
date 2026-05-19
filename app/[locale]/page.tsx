@@ -5,8 +5,6 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import { type Locale } from "@/i18n/config";
 import { renderTitle, newlineToBr } from "@/lib/title";
 
-export const runtime = "edge";
-
 const brands = [
   "L'ORÉAL", "ESTÉE LAUDER", "LANCÔME", "DIOR", "SHISEIDO",
   "SK-II", "LA MER", "CLARINS", "BIOTHERM", "ARMANI",
